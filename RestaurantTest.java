@@ -73,4 +73,9 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void return_the_total_cost_of_selected_items(){
+       assertEquals(119+269,restaurant.totalCostOfSelectedItems("Sweet corn soup","Vegetable lasagne"));
+    }
 }
